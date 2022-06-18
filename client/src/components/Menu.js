@@ -38,8 +38,8 @@ export default function Menu() {
                 )}
             </nav>
             <div>
-                {categories[category].options.map((option) => 
-                    <button>{option}</button>
+                {categories[category].options.map((option, i) => 
+                    <button key={i}>{option}</button>
                 )}
             </div>
         </>

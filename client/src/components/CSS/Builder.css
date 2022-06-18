@@ -1,0 +1,11 @@
+#img-wrapper {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#img-wrapper > img {
+    left: 0;
+    position: absolute;
+}
