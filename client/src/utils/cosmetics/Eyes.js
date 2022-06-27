@@ -1,16 +1,16 @@
 const eyes = [
     {
-        name: "Beady",
+        text: "Beady",
         file: ""
     },
     {
-        name: "Joy",
+        text: "Joy",
         file: ""
     },
     {
-        name: "Angry",
+        text: "Angry",
         file: ""
     }
 ]
 
-module.exports = { eyes }
+module.exports = eyes;

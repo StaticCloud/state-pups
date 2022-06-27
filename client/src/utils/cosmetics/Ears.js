@@ -13,4 +13,4 @@ const ears = [
     }
 ]
 
-module.exports = { ears }
+module.exports = ears;

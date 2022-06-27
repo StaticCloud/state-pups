@@ -1,12 +1,12 @@
 const extra = [
     {
-        name: "Sunglasses",
+        text: "Sunglasses",
         file: ""
     },
     {
-        name: "Top Hat",
+        text: "Top Hat",
         file: ""
     }
 ]
 
-module.exports = { extra }
+module.exports = extra;

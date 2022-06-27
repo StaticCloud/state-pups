@@ -13,4 +13,4 @@ const muzzle = [
     }
 ]
 
-module.exports = { muzzle }
+module.exports = muzzle;

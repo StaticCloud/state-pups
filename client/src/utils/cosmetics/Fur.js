@@ -13,4 +13,4 @@ const fur = [
     }
 ]
 
-module.exports = { fur }
+module.exports = fur;

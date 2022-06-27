@@ -11,22 +11,23 @@ export default function Menu() {
 
     const categories = [ Eyes, Ears, Fur, Muzzle, Extra ]
 
-    const [category, setCategory] = useState(Object.keys(categories[0])[0]);
+    const [currentCategory, setCategory] = useState(categories[0]);
 
     return (
         <>
             <nav>
                 {categories.map((category, i) => 
-                    <button key={i} onClick={() => setCategory(Object.keys(category)[0])}>
+                    <button key={i} onClick={() => setCategory(categories[i])}>
                         {/* displays object name as string */}
-                        {Object.keys(category)}
+                        {i}
                     </button>
                 )}
             </nav>
             <div>
-                {/* {categories[category].options.map((option, i) => 
-                    <button key={i}>{option}</button>
-                )} */}
+                {/* map each cosmetic to a button */}
+                {currentCategory.map((cosmetic, i) => 
+                    <button key={i}>{cosmetic.text}</button>
+                )}
             </div>
         </>
     );
