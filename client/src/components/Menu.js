@@ -14,13 +14,40 @@ import Extra from '../utils/cosmetics/Extra'
 export default function Menu() {
     //! REVIEW: use useSelectro from react-redux to access reducers in your store
     const character = useSelector(state => state.character);
+    const dispatch = useDispatch();
 
     const categories = [ Eyes, Ears, Fur, Muzzle, Extra ]
 
     const [currentCategory, setCategory] = useState(categories[0]);
 
+    // update the character reducer in our store given the category
+    function setCosmetics(text) {
+        switch (currentCategory.name) {
+            case 'Eyes':
+                dispatch(setEyes({ eyes: text }))
+                break;
+            case 'Ears':
+                dispatch(setEars({ ears: text }))
+                break;
+            case 'Muzzle':
+                dispatch(setMuzzle({ muzzle: text }))
+                break;
+            case 'Fur':
+                dispatch(setFur({ fur: text }))
+                break;
+            case 'Extra': 
+                dispatch(setExtra({ extra: text }))
+                break;
+        }
+    }
+
+    useEffect(() => {
+        console.log(character)
+    }, [setCosmetics])
+
     return (
         <>
+            <h1>Select {currentCategory.name}</h1>
             <nav>
                 {categories.map((category, i) => 
                     <button key={i} onClick={() => setCategory(categories[i])}>
@@ -32,7 +59,7 @@ export default function Menu() {
             <div>
                 {/* map each cosmetic to a button */}
                 {currentCategory.cosmetics.map((cosmetic, i) => 
-                    <button key={i}>{cosmetic.text}</button>
+                    <button key={i} onClick={() => setCosmetics(cosmetic.text)}>{cosmetic.text}</button>
                 )}
             </div>
         </>
