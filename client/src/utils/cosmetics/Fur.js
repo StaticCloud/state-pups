@@ -3,15 +3,15 @@ const fur = {
     cosmetics: [
         {
             text: "Golden",
-            file: ""
+            file: require('../../components/Img/Fur/dog_body_golden.png')
         },
         {
-            text: "Grey",
-            file: ""
+            text: "Brown",
+            file: require('../../components/Img/Fur/dog_body_brown.png')
         },
         {
             text: "Black",
-            file: ""
+            file: require('../../components/Img/Fur/dog_body_black.png')
         }
     ]
 }
