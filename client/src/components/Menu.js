@@ -59,7 +59,7 @@ export default function Menu() {
             <div>
                 {/* map each cosmetic to a button */}
                 {currentCategory.cosmetics.map((cosmetic, i) => 
-                    <button key={i} onClick={() => setCosmetics(cosmetic.text)}>{cosmetic.text}</button>
+                    <button key={i} onClick={() => setCosmetics(cosmetic.file)}>{cosmetic.text}</button>
                 )}
             </div>
         </>
