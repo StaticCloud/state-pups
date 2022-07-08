@@ -1,0 +1,12 @@
+#char-display {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#char-display img {
+    left: 0px;
+    position: absolute;
+}
