@@ -3,7 +3,7 @@ const eyes = {
     cosmetics: [
         {
             text: "Beady",
-            file: ""
+            file: require("../../components/Img/Eyes/eyes_beady.png")
         },
         {
             text: "Joy",

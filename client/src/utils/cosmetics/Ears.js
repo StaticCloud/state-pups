@@ -2,16 +2,16 @@ const ears = {
     name: "Ears",
     cosmetics: [
         {
-            text: "Button",
-            file: ""
+            text: 'Button (Gold)',
+            file: require('../../components/Img/Ears/ears_button_gold.png')
         },
         {
-            text: "Bat",
-            file: ""
+            text: "Button (Black)",
+            file: require('../../components/Img/Ears/ears_button_black.png')
         },
         {
-            text: "Erect",
-            file: ""
+            text: "Button (Brown)",
+            file: require('../../components/Img/Ears/ears_button_brown.png')
         }
     ]
 }

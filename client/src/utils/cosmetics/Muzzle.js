@@ -3,15 +3,15 @@ const muzzle = {
     cosmetics: [
         {
             text: "Golden",
-            file: ""
+            file: require('../../components/Img/Muzzle/muzzle_gold.png')
         },
         {
-            text: "Grey",
-            file: ""
+            text: "Brown",
+            file: require('../../components/Img/Muzzle/muzzle_brown.png')
         },
         {
             text: "Black",
-            file: ""
+            file: require('../../components/Img/Muzzle/muzzle_black.png')
         }
     ]
 }
