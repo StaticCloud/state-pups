@@ -7,7 +7,8 @@ const characterSlice = createSlice({
         eyes: 0,
         ears: 0,
         muzzle: 0,
-        extra: 0
+        extra: 0,
+        background: 0
     },
     reducers: {
         setFur: (state, action) => {
@@ -39,9 +40,15 @@ const characterSlice = createSlice({
                 ...state,
                 extra: action.payload.extra
             }
+        },
+        setBackground: (state, action) => {
+            return {
+                ...state,
+                background: action.payload.background
+            }
         }
     }
 })
 
-export const { setFur, setEyes, setEars, setMuzzle, setExtra } = characterSlice.actions;
+export const { setFur, setEyes, setEars, setMuzzle, setExtra, setBackground } = characterSlice.actions;
 export default characterSlice.reducer;

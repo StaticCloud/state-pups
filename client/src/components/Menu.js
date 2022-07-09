@@ -3,26 +3,30 @@ import './CSS/Menu.css'
 
 import { useSelector, useDispatch } from 'react-redux';
 
-import { setFur, setEyes, setEars, setMuzzle, setExtra } from '../state/characterReducer'
+import { setFur, setEyes, setEars, setMuzzle, setExtra, setBackground } from '../state/characterReducer'
 
 import Eyes from '../utils/cosmetics/Eyes'
 import Ears from '../utils/cosmetics/Ears'
 import Fur from '../utils/cosmetics/Fur'
 import Muzzle from '../utils/cosmetics/Muzzle'
 import Extra from '../utils/cosmetics/Extra'
+import Background from '../utils/Background'
 
 export default function Menu() {
     //! REVIEW: use useSelectro from react-redux to access reducers in your store
     const character = useSelector(state => state.character);
     const dispatch = useDispatch();
 
-    const categories = [ Eyes, Ears, Fur, Muzzle, Extra ]
+    const categories = [ Background, Eyes, Ears, Fur, Muzzle, Extra ]
 
     const [currentCategory, setCategory] = useState(categories[0]);
 
     // update the character reducer in our store given the category
     function setCosmetics(text) {
         switch (currentCategory.name) {
+            case 'Background':
+                dispatch(setBackground({ background: text }))
+                break;
             case 'Eyes':
                 dispatch(setEyes({ eyes: text }))
                 break;

@@ -7,7 +7,7 @@ export default function Avatar() {
     const character = useSelector(state => state.character);
 
     return (
-        <div id="char-display">
+        <div id="char-display" style={{backgroundColor: character.background}}>
             <img src={character.fur}></img>
             <img src={character.eyes}></img>
             <img src={character.extra}></img>
