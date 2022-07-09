@@ -10,6 +10,7 @@ export default function Avatar() {
         <div id="char-display">
             <img src={character.fur}></img>
             <img src={character.eyes}></img>
+            <img src={character.extra}></img>
             <img src={character.ears}></img>
             <img src={character.muzzle}></img>
         </div>

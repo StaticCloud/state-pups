@@ -3,11 +3,11 @@ const extra = {
     cosmetics: [
         {
             text: "Sunglasses",
-            file: ""
+            file: require('../../components/Img/Extra/sunglasses.png')
         },
         {
             text: "Top Hat",
-            file: ""
+            file: require('../../components/Img/Extra/top_hat.png')
         }
     ]
 }

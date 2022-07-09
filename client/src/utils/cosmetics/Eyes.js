@@ -7,11 +7,11 @@ const eyes = {
         },
         {
             text: "Joy",
-            file: ""
+            file: require("../../components/Img/Eyes/eyes_joy.png")
         },
         {
             text: "Angry",
-            file: ""
+            file: require("../../components/Img/Eyes/eyes_angry.png")
         }
     ]
 }
